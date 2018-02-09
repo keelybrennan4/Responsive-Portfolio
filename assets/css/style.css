@@ -1,0 +1,226 @@
+body{
+    color: #777777;
+    font-size: 18px;
+    line-height: 150%;
+    background-image: url("../images/dust_scratches.png");
+}
+/*begin full width header, nav bar, and name/logo area */
+.container{
+    width: 980px;
+    margin: auto;
+}
+header{
+    height: 80px;
+    width: 100%;
+    margin: auto;
+    padding:0px;
+    border: 1px solid;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    border-color: #cccccccc;
+    overflow: hidden;
+    background-color: #ffffffff;
+}
+/*turquiose name/logo box*/
+#header-name{ 
+    float: left;
+    width: 250px;
+    height: 80px;
+    font-size: 30px;
+    color: #ffffff;
+    background-color:#4aaaa5;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    margin-left: 110px;
+}
+/*nav bar fixed to top of page*/
+.fixed-nav-bar{
+    color: #cccccccc;
+    float: left;
+    width: 720px;
+    height: 40px;
+    padding-top: 15px;
+}
+/*nav hyperlinked text */
+li{
+    float: right;
+    display: inline-block;
+    padding: 10px;
+}
+a{
+    color: #777777;
+    text-decoration: none;
+}
+/**end full width header, nav bar, and name/logo area**/
+
+/*begin container with main content/section and side bar/aside*/
+.below-header{
+    max-width: 980px;
+    margin-left: 110px;
+    margin: auto;
+}
+section{
+    text-align: left;
+    background-color: #ffffff;
+    font-family: 'Arial', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    position: relative;
+    float: left;
+    top: 30px;
+    width: 600px;
+    padding: 20px;
+    border: 1px solid #dddddddd;
+}
+h1{
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 32px;
+    color: #4aaaa5;
+    text-align: left;
+    line-height: 200%;
+    font-weight: bold;
+}
+/*begin connect with me side bar*/
+aside{
+    background-color: #ffffff;
+    position: relative;
+    float: left;
+    top: 30px;
+    left: 40px;
+    width: 240px;
+    padding: 14px;
+    padding-bottom: 30px;
+    border: 1px solid #dddddddd;
+}
+/*contact me icon images positioned in side bar*/
+.icon-image{
+    float:left;
+    position: relative;
+    width: 65px;
+    padding-left: 5px;
+    margin: 5px;
+}
+h2{
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 24px;
+    color: #4aaaa5;
+    text-align: center;
+    line-height: 200%;
+    font-weight: bold;
+}
+/**end container with main content section and side bar**/
+
+/*portfolio page project images with labels*/
+.portfolio-image{
+    float:left;
+    position: relative;
+    width: 270px;
+    height: 220px;
+    margin: 10px;
+}
+/*portfolio page project image labels*/
+.portfolio-image-label{
+    position: absolute;
+    text-align: center;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 5px;
+    right: 0px;
+    left: 10px;
+    bottom: 10px;
+    height: 30px;
+    width: 260px;
+    margin: 0px;
+}
+/*index page about me image*/
+#bio-image{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+/* contact me page form */
+input[type=text], select, textarea{
+    font-size: 10px;
+    line-height: 75%;
+    width: 100%;
+    padding-top: 3px;
+    border: 1px solid #dddddddd;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+input[type=submit]{
+    background-color: #4aaaa5;
+    font-size: 20px;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+}
+/*sticky footer*/
+footer{
+    clear: both;
+    width: 100%;
+    position: relative;
+    bottom: -60px;
+    text-align: center;
+    font-size: 10px;
+    color: #ffffff;
+    background-color:#777777;
+    padding-top: 30px;
+    border-top: 5px solid #4aaaa5;
+}
+/*media queries*/
+@media screen and (min-width: 979px){
+    .container{
+        width: 100%;
+        margin: auto;
+    }
+    .below-header{
+        width: 70%;
+        margin: auto;
+    }
+    .aside{
+        width: 30%;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 767px){
+    .container{
+        margin: auto;
+        width: 100%;
+    }
+    .below-header{
+        width: 100%;
+        margin: auto;
+    }
+    .aside{
+        margin: auto;
+        width: 100%;
+    }
+    .fixed-nav-bar{
+        width: 40%;
+        margin: auto;
+    }
+    #header-name{
+        margin-left: 20px;
+    }
+}
+@media screen and (min-width: 639px){
+    .container{
+        width: 100%;
+    }
+    .below-header{
+        width: 100%;
+    }
+    .aside{
+        width: 100%;
+    }
+    .fixed-nav-bar{
+        width: 40%;
+    }
+    #header-name{
+        margin-left: 0px;
+    }
+}
